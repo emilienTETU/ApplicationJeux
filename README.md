@@ -9,7 +9,7 @@ Application de gestion de score pour les jeux :
   - Belote
   - Application d'addition et de soustraction
   
- ![Screenshot](..master/ImageReadMe/Screenshot_20200731_140719_com.e.jeux.jpg.png)
- ![Screenshot](..master/ImageReadMe/Screenshot_20200731_140745_com.e.jeux.jpg.png)
- ![Screenshot](..master/ImageReadMe/Screenshot_20200731_140754_com.e.jeux.jpg.png)
- ![Screenshot](..master/ImageReadMe/Screenshot_20200731_140803_com.e.jeux.jpg.png)
+ ![Screenshot](https://github.com/emilienTETU/ApplicationJeux/blob/master/ImageReadMe/Screenshot_20200731_140719_com.e.jeux.jpg)
+ ![Screenshot](https://github.com/emilienTETU/ApplicationJeux/blob/master/ImageReadMe/Screenshot_20200731_140745_com.e.jeux.jpg.png)
+ ![Screenshot](https://github.com/emilienTETU/ApplicationJeux/blob/master/ImageReadMe/Screenshot_20200731_140754_com.e.jeux.jpg.png)
+ ![Screenshot](https://github.com/emilienTETU/ApplicationJeux/blob/master/ImageReadMe/Screenshot_20200731_140803_com.e.jeux.jpg.png)
