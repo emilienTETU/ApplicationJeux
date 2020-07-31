@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_game_list"
+    android:elevation="2dp"
+    android:id="@+id/background_victory"
+    android:padding="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/rvNamePlayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Joueur"
+        android:textSize="20sp"
+        android:textColor="@color/text_black"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/rvScore"/>
+
+    <TextView
+        android:id="@+id/rvScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Score : 2000"
+        android:textSize="15sp"
+        android:layout_marginStart="9dp"
+        android:textColor="@color/text_gray"
+        android:fontFamily="@font/avenir_lt_medium"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/rvNamePlayer"
+        app:layout_constraintBottom_toBottomOf="@id/rvNamePlayer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/rvNamePlayer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

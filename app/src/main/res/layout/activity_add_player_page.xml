@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AddPlayerPage.AddPlayerPageActivity">
+
+    <TextView
+        android:id="@+id/titleNameGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JEU"
+        android:textAlignment="center"
+        android:textColor="@color/text_black"
+        android:textSize="25sp"
+        android:fontFamily="@font/montserrat_black"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter des joureurs ou des équipes..."
+        android:textColor="@color/text_gray"
+        android:textSize="15sp"
+        android:fontFamily="@font/avenir_lt_medium"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/titleNameGame"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAddPlayerPageActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        tools:listitem="@layout/custom_item_player"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:layout_constraintBottom_toTopOf="@id/nameEditText"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Nom..."
+        android:elevation="1dp"
+        android:background="@drawable/background_button_gray"
+        android:textColorHint="@color/text_gray"
+        android:fontFamily="@font/avenir_lt_medium"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/addPlayerButton"
+        app:layout_constraintRight_toLeftOf="@id/addPlayerButton"
+        app:layout_constraintBottom_toBottomOf="@id/addPlayerButton"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/addPlayerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:textColor="@color/text_black"
+        android:fontFamily="@font/avenir_lt_black"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:elevation="1dp"
+        android:background="@drawable/background_button_orange"
+        app:layout_constraintLeft_toRightOf="@id/nameEditText"
+        app:layout_constraintBottom_toTopOf="@id/launchGameButton"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/launchGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lancer"
+        android:textSize="15sp"
+        android:textColor="@color/text_black"
+        android:elevation="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/avenir_lt_black"
+        android:background="@drawable/background_button_orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
